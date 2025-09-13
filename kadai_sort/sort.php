@@ -9,8 +9,8 @@
 <body>
     <p>
         <?php
-        function number_sort($array, $order){
-echo '降順にソートします。<br>';
+        function sort_2way ($array, $order){
+
 if ($order) {
                 echo '昇順にソートします。<br>';
                 sort($array);
@@ -25,8 +25,8 @@ if ($order) {
         // ソートする配列を宣言
 $nums = [15, 4, 18, 23, 10 ];
         // sort_2wayを呼び出しましょう。
-number_sort ($nums, TRUE);
-number_sort ($nums, false);
+sort_2way ($nums, TRUE);
+sort_2way ($nums, false);
         ?>
     </p>
 </body>
